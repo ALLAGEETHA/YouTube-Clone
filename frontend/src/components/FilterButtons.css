@@ -1,0 +1,36 @@
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  overflow-x: auto;
+  background-color: #0f0f0f;
+  position: sticky;
+  top: 56px;
+  z-index: 10;
+  scrollbar-width: none;
+}
+
+.filter-buttons::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  background-color: #272727;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.filter-button:hover {
+  background-color: #3d3d3d;
+}
+
+.filter-button.active {
+  background-color: #ffffff;
+  color: #0f0f0f;
+}
+
